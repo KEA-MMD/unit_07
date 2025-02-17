@@ -11,6 +11,16 @@ img {
   display: block;
 }
 
+/*root indstillinger*/
+:root {
+  --primary: #f6f4ef;
+  --secondary: #54281a;
+  --tertiary: #8b1426;
+  --quaternary: #333333;
+  --font1: ;
+  --font2: albert sans, sans-serif;
+}
+
 /*******/
 /* main {
   margin: 40px 30px;

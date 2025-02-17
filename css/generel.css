@@ -1,0 +1,33 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*root indstillinger*/
+:root {
+  --primary: #f6f4ef;
+  --secondary: #54281a;
+  --tertiary: #8b1426;
+  --quaternary: #333333;
+  --font1: ;
+  --font2: albert sans, sans-serif;
+}
+
+/*******/
+/* main {
+  margin: 40px 30px;
+}
+
+@media (min-width: 800px) {
+  main {
+    margin: 40px 50px;
+  }
+} */

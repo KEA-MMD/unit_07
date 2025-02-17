@@ -1,7 +1,37 @@
+/*about us section*/
+.about-us {
+  background-color: #f6f4ef;
+  padding: 40px 30px;
+}
+
+.about-us h1 {
+  text-align: center;
+}
+
+.button-red {
+  background-color: #8b1426;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.button-red a {
+  color: white;
+  text-decoration: none;
+  font-family: albert sans, sans-serif;
+}
+
+.category-titel {
+  place-self: center;
+  margin-bottom: 30px;
+}
+
+/***Food category menu***/
 .food-category {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  margin: 40px 30px;
 }
 
 .food-category img {
@@ -12,24 +42,22 @@
 
 .label {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 170px;
+  width: 300px;
   text-align: center;
   background: white;
+  font-family: albert sans, sans-serif;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 2.1rem;
+  font-weight: thin;
 }
 
 @media (max-width: 800px) {
   .food-category {
     margin-bottom: 30px;
-  }
-
-  .label {
-    padding: 12px;
-    border-radius: 18px;
-    font-size: 1.2rem;
-    font-weight: bold;
   }
 }
 
@@ -37,4 +65,23 @@
   .food-container {
     display: flex;
   }
+}
+
+/*****cuisine category******/
+.cuisine-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin: 40px 30px;
+}
+
+.cuisine-container .food-category {
+  margin: 0;
+}
+
+.cuisine-container .food-category .label {
+  width: 200px;
+  padding: 10px;
+  border-radius: 18px;
+  font-size: 1.5rem;
 }

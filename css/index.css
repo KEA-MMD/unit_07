@@ -13,6 +13,7 @@
   padding: 10px;
   border-radius: 20px;
   text-align: center;
+  width: 170px;
 }
 
 .button-red a {
@@ -53,6 +54,7 @@
   border-radius: 18px;
   font-size: 2.1rem;
   font-weight: thin;
+  color: var(--quatery);
 }
 
 @media (max-width: 800px) {
@@ -64,6 +66,13 @@
 @media (min-width: 800px) {
   .food-container {
     display: flex;
+  }
+
+  .label {
+    width: 200px;
+    padding: 10px;
+    border-radius: 18px;
+    font-size: 1.7rem;
   }
 }
 

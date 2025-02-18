@@ -17,8 +17,22 @@ img {
   --secondary: #54281a;
   --tertiary: #8b1426;
   --quaternary: #333333;
-  --font1: ;
+  --font1: Alkalami, sans-serif;
   --font2: albert sans, sans-serif;
+}
+
+h1 {
+  font-family: var(--font1);
+  color: var(--secondary);
+}
+
+h2 {
+  font-family: var(--font1);
+}
+
+h3 {
+  font-family: var(--font2);
+  font-weight: thin;
 }
 
 /*******/

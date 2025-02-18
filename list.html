@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/list.css" />
     <!-- JS -->
-    <script rel="js/list.js" defer></script>
+    <script src="js/list.js" defer></script>
     <!-- SEO -->
     <meta name="description" content="" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="" />
+    <link rel="icon" type="image/svg" href="assets/logo.svg" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,19 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <nav class="header_nav">
+        <img src="assets/logo.svg" alt="Logo" />
+        <a href=""><h5>LOGIN</h5></a>
+        <ul>
+          <li><a href="list.html">All Recipes</a></li>
+          <li class="header_decor">◈</li>
+          <li><a href="meal.html">By Meal</a></li>
+          <li class="header_decor">◈</li>
+          <li><a href="country.html">By Country</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <h1>All Recipes</h1>
@@ -89,6 +101,19 @@
       <h4 class="button">LOAD MORE...</h4>
     </main>
 
-    <footer></footer>
+    <footer>
+      <img src="assets/logo.svg" alt="Logo" />
+      <div>
+        <h6>Spice up your life!</h6>
+        <div class="social_media">
+          <img src="assets/whatsapp.svg" alt="WhatsApp" />
+          <img src="assets/facebook.svg" alt="Facebook" />
+          <img src="assets/instagram.svg" alt="Instagram" />
+        </div>
+        <p>tlf: +45 12345678</p>
+        <p>email: mail@gmail.com</p>
+        <p>Sønderhøj 14, 8260 Viby J, Denmark</p>
+      </div>
+    </footer>
   </body>
 </html>

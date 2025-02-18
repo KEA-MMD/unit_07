@@ -3,6 +3,12 @@ h1 {
   padding-top: 50px;
   padding-bottom: 10px;
 }
+p {
+  font-family: var(--font2);
+}
+.ingredients {
+  font-family: var(--font2);
+}
 .center {
   display: flex;
   align-items: center;
@@ -21,6 +27,7 @@ h1 {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  padding-bottom: 20px;
 }
 .baggrundsfelt {
   background-color: #a2beb0;
@@ -80,6 +87,9 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .padding_left10px {
+    padding-left: 10px;
   }
   .grid_1-1-1-3 {
     display: flex;

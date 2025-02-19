@@ -13,6 +13,10 @@ h1 {
   gap: 20px;
 }
 
+a {
+  color: black;
+}
+
 .list_item {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,6 +48,7 @@ h2 {
 .item_description p:first-of-type {
   text-transform: uppercase;
   padding-top: 20px;
+  color: #9f4d31;
 }
 
 p {

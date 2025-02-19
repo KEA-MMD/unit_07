@@ -1,4 +1,4 @@
-/* CATH CSS */
+/* CATH CSS
 main {
   margin: 40px 30px;
 }
@@ -111,6 +111,117 @@ p {
     grid-row: 1;
     grid-column: 4;
   }
-}
+} */
 
 /* CATHS CSS SLUT */
+h1 {
+  margin: 40px 30px 5px;
+  font-size: 2.1rem;
+  font-weight: 200;
+}
+
+h2 {
+  color: var(--quaternary);
+  font-weight: 200;
+  font-size: 1.7rem;
+}
+@media (min-width: 800px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    color: var(--quaternary);
+    font-weight: 200;
+    font-size: 2.2rem;
+  }
+}
+
+.quick-info {
+  display: flex;
+}
+
+.checked {
+  color: orange;
+}
+
+.recipe-info {
+  display: grid;
+  background-color: var(--primary);
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #4e2a1d;
+  gap: 2px;
+  margin: 10px 30px 30px;
+}
+
+.element {
+  background-color: var(--primary);
+  padding: 6px;
+  place-content: center;
+}
+
+.stars {
+  grid-column: 1 / span 2;
+}
+@media (min-width: 800px) {
+  .recipe-info {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .element4 {
+    grid-column: 4;
+  }
+}
+
+/*Picture and ingredients*/
+.ingredient-info {
+  margin: 10px 30px 50px;
+}
+.ingredient-info h2 {
+  text-align: center;
+}
+.food-category img {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.food-category {
+  margin-bottom: 20px;
+  margin: 10px 0;
+}
+ul {
+  list-style-position: inside;
+  font-family: albert sans, sans-serif;
+  line-height: 28px;
+}
+
+@media (min-width: 800px) {
+  .ingredient-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  ul {
+    font-size: 1.3rem;
+  }
+  ol {
+    font-size: 1.3rem;
+  }
+}
+.instruction-list {
+  margin: 20px 0;
+  padding: 20px 30px;
+  background-color: var(--primary);
+}
+.instruction-list h2 {
+  text-align: center;
+}
+ol {
+  list-style-position: inside;
+  font-family: albert sans, sans-serif;
+  line-height: 28px;
+}
+
+@media (min-width: 800px) {
+  .instruction-list {
+    display: grid;
+    place-content: center;
+  }
+}

@@ -14,7 +14,7 @@ function showRecipes(data) {
   let arrayWithRecipes = allRecipes.map(
     (recipe) =>
       `
-    <div class="list_item">
+    <a href="recipe.html"><div class="list_item">
           <div class="item_description">
             <p>${recipe.cuisine}</p>
             <h2>${recipe.name}</h2>
@@ -26,7 +26,7 @@ function showRecipes(data) {
             src="${recipe.image}"
             alt="Recipe image"
           />
-        </div>
+        </div></a>
     `
   );
 

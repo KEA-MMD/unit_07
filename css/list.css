@@ -1,3 +1,9 @@
+@media (max-width: 800px) {
+  main {
+    margin: 0 30px;
+  }
+}
+
 h1 {
   font-family: "Alkalami";
   text-transform: uppercase;
@@ -81,5 +87,15 @@ p {
 
   .item_description {
     padding: 20px;
+  }
+}
+
+.select-container {
+  margin: 10px 0 20px;
+}
+
+@media (min-width: 800px) {
+  .select-container {
+    margin: 10px 30px 20px;
   }
 }

@@ -17,10 +17,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Alkalami&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Alkalami&display=swap" rel="stylesheet" />
   </head>
 
   <body>
@@ -37,12 +34,17 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <h1>All Recipes</h1>
+      <div class="select-container">
+        <select id="cuisine">
+          <option value="All">All</option>
+        </select>
+        <select id="mealType">
+          <option value="All">All</option>
+        </select>
+      </div>
       <div class="list_flex"></div>
-
-      <h4 class="button">LOAD MORE...</h4>
     </main>
 
     <footer>

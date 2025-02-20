@@ -1,0 +1,116 @@
+/* CATH CSS */
+main {
+  margin: 40px 30px;
+}
+h1 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+p {
+  font-family: var(--font2);
+}
+.ingredients {
+  font-family: var(--font2);
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center_p {
+  text-align: center;
+}
+.grid_1-1-1-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  background-color: #efece3;
+  border: 0.5px black solid;
+  width: auto;
+  height: auto;
+}
+
+.stjerner {
+  grid-row: 2;
+}
+.average {
+  grid-row: 2;
+}
+
+.food_container_img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.baggrundsfelt {
+  background-color: #a2beb0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.grid_1-1-1 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding_bottom50px {
+  padding-bottom: 50px;
+}
+.padding_bottom20px {
+  padding-bottom: 20px;
+}
+.padding_top50px {
+  padding-top: 50px;
+}
+
+.baggrundsfarve {
+  background-color: #efece3;
+  width: auto;
+  height: auto;
+  padding: 6px;
+}
+
+.border_right {
+  border-right: black 0.5px solid;
+}
+.padding_5px {
+  padding: 5px;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .padding_left10px {
+    padding-left: 10px;
+  }
+
+  .grid_1-1-1-3 {
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+
+  .stjerner {
+    grid-row: 1;
+    grid-column: 4;
+  }
+}
+
+/* CATHS CSS SLUT */

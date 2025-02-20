@@ -28,11 +28,15 @@ h1 {
 
 h2 {
   font-family: var(--font1);
+  color: var(--quaternary);
+  font-size: 1.7rem;
 }
 
 h3 {
   font-family: var(--font2);
   font-weight: thin;
+  font-size: 1.3rem;
+  color: var(--quaternary);
 }
 
 /*******/

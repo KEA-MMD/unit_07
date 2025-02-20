@@ -14,13 +14,11 @@
 }
 
 .product-box {
-  grid-row: 2;
   width: 80%;
   place-self: center;
 }
 
 .product-box2 {
-  grid-row: 3;
   width: 80%;
   place-self: center;
 }
@@ -31,7 +29,9 @@
 
 @media (min-width: 800px) {
   .product-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1 / span 7;
+    grid-row: 1;
   }
 
   .product-title {
@@ -78,8 +78,14 @@
   text-align: center;
   width: 170px;
   place-self: center;
+  color: white;
+  text-decoration: none;
+  font-family: var(--font2);
+  font-size: 1.2rem;
 }
-
+.button-center {
+  text-align: center;
+}
 .button-red a {
   color: white;
   text-decoration: none;

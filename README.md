@@ -36,13 +36,8 @@ Man gør brug af id til javascript og classes til css.
 
 # Funktionalitet
 
-Dette afsnit skal forklare hvad I konkret har arbejde med, for at udvikle websitet. Tænk over hvilke interaktioner brugeren kan foretage på sitet? Eller hvordan websitet håndterer og præsenterer data? Eksempler på funktionalitet, der kan beskrives:
-
-- Hentning af produkter fra API.
-- Filtrering af produkter baseret på brugerens valg.
-- Dynamisk visning af produkter i HTML.
-
-Brug korte beskrivelser, som i eksemplerne herover
+Filtrering bliver brugt på liste siden, hvor brugeren kan filtrere opskrifter i kategorierne "mealtype" og "cuisine".
+Der bruges dynamisk visning af opskrifterne i HTML, som bliver hentet fra den udleverede API
 
 # API endpoints
 
@@ -58,11 +53,34 @@ Dette afsnit skal beskrive en funktion I selv har udviklet. Det kunne eksempelv
 - Returnerer: Beskriv, om funktionen returnerer en værdi eller blot manipulerer DOM’en.
 - Eksempel på brug: Indsæt funktions-koden herunder(der hvor koden er i eksemplet) og vis, hvordan funktionen kaldes:
 
+Funktionen "showList" genererer en liste af opskrifter i HTML-format baseret på data, der bliver sendt til den.
+
+- Funktionen tager et array(data)
+- map() går gennem hvert objekt (recipe) i arrayet.
+- Hver opskrift vises som et <a>-link med id i URL'en
+- Her bliver tid, portioner, sværhedsgrad, instrukser osv. vist for hver opskrift
+- HTML-strengen samles så og bliver indsat i recipeContainer, som er inde i HTML filen
+
 ```javascript
-//funktionens kode:
-function voresFunktion(sprog) {
-  console.log(`${sprog} syntax highlighting`);
+function showList(data) {
+  const markup = data
+    .map(
+      (recipe) => `
+    <a href="recipe.html?recipe=${recipe.id}"><div class="list_item">
+          <div class="item_description">
+            <p>${recipe.cuisine}</p>
+            <h2>${recipe.name}</h2>
+            <p>TIME: ${recipe.prepTimeMinutes} + ${recipe.cookTimeMinutes} min.</p>
+            <p>SERVINGS: ${recipe.servings}</p>
+            <p>${recipe.difficulty}</p>
+          </div>
+          <img
+            src="${recipe.image}"
+            alt="Recipe image"
+          />
+        </div></a>`
+    )
+    .join("");
+  recipeContainer.innerHTML = markup;
 }
-//hvordan funktionen kaldes:
-voresFunktion("JavaScript");
 ```

@@ -32,27 +32,16 @@ fetch(`https://dummyjson.com/recipes/${myRecipe}`)
           <div>
             <h2>Ingredients</h2>
             <ul>
-              <li>Ingredient</li>
-              <li>Ingredient</li>
-              <li>Ingredient</li>
-              <li>Ingredient</li>
-              <li>Ingredient</li>
-              <li>Ingredient</li>
-              <li>Ingredient</li>
-              <li>Ingredient</li>
+      ${recipe.ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}
             </ul>
           </div>
         </div>
         <div class="instruction-list">
           <h2>Instructions</h2>
           <ol>
-            <li>Instruction keidaak</li>
-            <li>Instruction</li>
-            <li>Instruction</li>
-            <li>Instruction</li>
-            <li>Instructionjdoh</li>
-            <li>Instruction</li>
-            <li>Instructioniqopqoudohosahkgad</li>
+${recipe.instructions.map((instruction) => `<li>${instruction}</li>`).join("")}
+            
+           
           </ol>
         </div>`;
   });

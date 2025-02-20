@@ -2,6 +2,7 @@ h1 {
   margin: 40px 30px 5px;
   font-size: 2.1rem;
   font-weight: 200;
+  text-align: center;
 }
 
 h2 {
@@ -37,6 +38,10 @@ h2 {
   margin: 10px 30px 30px;
 }
 
+.recipe-info p {
+  font-family: albert sans, sans-serif;
+}
+
 .element {
   background-color: var(--primary);
   padding: 6px;
@@ -49,6 +54,11 @@ h2 {
 @media (min-width: 800px) {
   .recipe-info {
     grid-template-columns: repeat(5, 1fr);
+    width: 70%;
+    place-self: center;
+  }
+  .element {
+    padding: 10px;
   }
   .element4 {
     grid-column: 4;
@@ -81,6 +91,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    width: 70%;
+    place-self: center;
   }
   ul {
     font-size: 1.5rem;

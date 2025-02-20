@@ -63,6 +63,7 @@
   text-align: center;
   font-size: 1.8rem;
   font-weight: 200;
+  text-transform: uppercase;
 }
 .about-us p {
   line-height: 180%;
@@ -95,19 +96,22 @@
 
 .category-titel {
   margin: 80px 0 25px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  max-width: 1400px;
 }
 h2 {
   color: var(--quaternary);
   font-size: 1.7rem;
   font-weight: 200;
+  text-transform: uppercase;
 }
 
 h3 {
   color: var(--quaternary);
   font-size: 1.3rem;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 @media (min-width: 800px) {
@@ -137,6 +141,8 @@ h3 {
   gap: 30px;
   margin: 40px 30px;
   max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .food-category {
@@ -191,6 +197,8 @@ h3 {
   gap: 28px;
   margin: 40px 30px;
   max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 800px) {

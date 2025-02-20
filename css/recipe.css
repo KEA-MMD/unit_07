@@ -3,12 +3,14 @@ h1 {
   font-size: 2.1rem;
   font-weight: 200;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
   color: var(--quaternary);
   font-weight: 200;
   font-size: 1.7rem;
+  text-transform: uppercase;
 }
 @media (min-width: 800px) {
   h1 {
@@ -80,7 +82,7 @@ h2 {
   margin-bottom: 20px;
   margin: 10px 0;
 }
-ul {
+.recipe-container ul {
   list-style-position: inside;
   font-family: albert sans, sans-serif;
   line-height: 28px;
@@ -94,7 +96,7 @@ ul {
     width: 70%;
     place-self: center;
   }
-  ul {
+  .recipe-container ul {
     font-size: 1.5rem;
     line-height: 70px;
   }

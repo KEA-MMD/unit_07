@@ -1,20 +1,19 @@
-const recipeList = document.querySelector(".list_flex");
+console.log("siden loades");
 
-function collectData() {
-  console.log("script loaded collectData");
-  fetch("https://dummyjson.com/recipes")
-    .then((res) => res.json())
-    .then(showRecipes);
-}
+const myRec = new URLSearchParams(window.location.search).get("recipes");
 
-function showRecipes(data) {
-  console.log("showRecipes");
+const recipeContainer = document.querySelector(".list_flex");
 
+fetch(`https://dummyjson.com/recipes`)
+  .then((response) => response.json())
+  .then((data) => showList(data));
+
+function showList(data) {
   const allRecipes = data.recipes;
-  let arrayWithRecipes = allRecipes.map(
-    (recipe) =>
-      `
-    <a href="recipe.html"><div class="list_item">
+  const markup = allRecipes
+    .map(
+      (recipe) => `
+    <a href="recipe.html?recipe=${recipe.id}"><div class="list_item">
           <div class="item_description">
             <p>${recipe.cuisine}</p>
             <h2>${recipe.name}</h2>
@@ -26,11 +25,8 @@ function showRecipes(data) {
             src="${recipe.image}"
             alt="Recipe image"
           />
-        </div></a>
-    `
-  );
-
-  recipeList.innerHTML = arrayWithRecipes.join("");
+        </div></a>`
+    )
+    .join("");
+  recipeContainer.innerHTML = markup;
 }
-
-collectData();

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/list.css" />
     <!-- JS -->
-    <script rel="js/list.js" defer></script>
+    <script src="js/list.js" defer></script>
     <!-- SEO -->
     <meta name="description" content="" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="" />
+    <link rel="icon" type="image/svg" href="assets/logo.svg" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,71 +24,40 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <nav class="header_nav">
+        <a href="index.html"><img src="assets/logo.svg" alt="Logo" /></a>
+        <a href="form.html"><h5>SUBMIT RECIPE</h5></a>
+        <ul>
+          <li><a href="list.html">Recipes</a></li>
+          <li class="header_decor">◈</li>
+          <li><a href="">Products</a></li>
+          <li class="header_decor">◈</li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <h1>All Recipes</h1>
-      <div class="list_flex">
-        <div class="list_item">
-          <div class="item_description">
-            <p>Italian</p>
-            <h2>Classic Margherita Pizza</h2>
-            <p>TIME: 35 min.</p>
-            <p>SERVINGS: 4</p>
-            <p>EASY</p>
-          </div>
-          <img
-            src="https://cdn.dummyjson.com/recipe-images/1.webp"
-            alt="Recipe image"
-          />
-        </div>
-
-        <div class="list_item">
-          <div class="item_description">
-            <p>Asian</p>
-            <h2>Vegetarian Stir-Fry</h2>
-            <p>TIME: 35 min.</p>
-            <p>SERVINGS: 3</p>
-            <p>MEDIUM</p>
-          </div>
-          <img
-            src="https://cdn.dummyjson.com/recipe-images/2.webp"
-            alt="Recipe image"
-          />
-        </div>
-
-        <div class="list_item">
-          <div class="item_description">
-            <p>American</p>
-            <h2>Chocolate Chip Cookies</h2>
-            <p>TIME: 25 min.</p>
-            <p>SERVINGS: 24</p>
-            <p>EASY</p>
-          </div>
-          <img
-            src="https://cdn.dummyjson.com/recipe-images/3.webp"
-            alt="Recipe image"
-          />
-        </div>
-
-        <div class="list_item">
-          <div class="item_description">
-            <p>Italian</p>
-            <h2>Chicken Alfredo Pasta</h2>
-            <p>TIME: 35 min.</p>
-            <p>SERVINGS: 4</p>
-            <p>MEDIUM</p>
-          </div>
-          <img
-            src="https://cdn.dummyjson.com/recipe-images/4.webp"
-            alt="Recipe image"
-          />
-        </div>
-      </div>
+      <div class="list_flex"></div>
 
       <h4 class="button">LOAD MORE...</h4>
     </main>
 
-    <footer></footer>
+    <footer>
+      <a href="index.html"><img src="assets/logo.svg" alt="Logo" /></a>
+      <div>
+        <h6>Spice up your life!</h6>
+        <div class="social_media">
+          <img src="assets/whatsapp.svg" alt="WhatsApp" />
+          <img src="assets/facebook.svg" alt="Facebook" />
+          <img src="assets/instagram.svg" alt="Instagram" />
+        </div>
+        <p>tlf: +45 12345678</p>
+        <p>email: mail@gmail.com</p>
+        <p>Sønderhøj 14, 8260 Viby J, Denmark</p>
+      </div>
+    </footer>
   </body>
 </html>
